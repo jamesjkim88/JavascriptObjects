@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        Extensible Attribute
+         */
+
+        var x = {
+            a: 2145
+        };
+
+        x.exensible = true; //by default extensible is set to true
+        console.log(x.exensible); //prints true
+
+        var y = {
+            a:5236
+        };
+
+        Object.preventExtensions(y); //prevents y from having extensibles
+        y.extensible = true;
+        console.log(y.extensible); //should print undefined
+    </script>
+</head>
+<body>
+
+</body>
+</html>

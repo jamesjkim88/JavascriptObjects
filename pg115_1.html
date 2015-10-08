@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //to see how objects are mutable
+
+        var infiniti = {
+            model: "G37s"
+        };
+
+        console.log(infiniti.model) //prints g37s
+
+        var honda = infiniti; //honda will hold same values as infiniti
+        console.log(honda.model); //but will print out g37s because model
+
+        honda.model = "Accord";  //sets honda.model to be accord instead of holding infiniti.model
+        console.log(honda.model); //prints accord
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

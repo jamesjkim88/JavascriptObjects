@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //ECMA Script 5
+    //three main attritbutes.... prototype, class name, extensible
+
+    //object literal
+    var james = {
+        name: "James"
+    };
+
+    //constructor
+    function Car(){
+        this.wheels = 4;
+    }
+
+    car.prototype.roll = function(){
+        console.log("rolling at 5 mph");
+    };
+
+    var car = new Car();
+    car.roll()
+
+    //Object.create
+    // cannot access attributes as properties
+
+    var x = {
+        type: "web dev"
+    };
+
+    //x is the parent of y
+    var y = Object.create(x);
+    console.log(Object.getPrototypeOf(y) === x)
+
+
+</script>
+</body>
+</html>

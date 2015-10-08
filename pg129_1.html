@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        Getters and Setters
+         */
+//        var person = {
+//            fName: "james",
+//            lName: "kim",
+//            fName: "James Kim"
+//        }
+
+        var person ={
+            fName: "james",
+            lName: "kim",
+            get fullName(){
+                return this.fName + " " + this.lName;
+            },
+            set newName(newName){
+                this.name = newName + " " + this.lName;
+            }
+        };
+
+        console.log(person.fName);
+        console.log(person.lName);
+        console.log(person.fullName);
+        person.newName = "john";
+        console.log(person.name);
+
+        var car = {
+            make: "ferrai",
+            mileage: 100,
+            get model(){
+                return "this " + this.make + " is a f40";
+            },
+            get miles(){
+                return this.mileage;
+            },
+            set miles(num){
+                this.mileage = num;
+            }
+        };
+
+        console.log(car.make);
+        console.log(car.mileage);
+        console.log(car.model);
+        car.miles = car.miles + 200;
+        console.log(car);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

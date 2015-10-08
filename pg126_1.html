@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        Enumerating
+         */
+        var obj = {
+            one: 1,
+            two: 2,
+            three: 3
+        };
+        var i = 1;
+        var one = obj.propertyIsEnumerable("one") //should print true
+        var two = obj.propertyIsEnumerable("two") //should print true
+        var three = obj.propertyIsEnumerable("three") //should print true
+        for(prop in obj){
+            console.log(prop + ": " + i++);
+        };
+
+        function seeTrue(){
+            console.log(one === two);
+            console.log(one === three);
+            console.log(two == one);
+            console.log(two == three);
+            console.log(three === one);
+            console.log(three === two);
+        }
+
+        seeTrue();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

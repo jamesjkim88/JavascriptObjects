@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        Merge() different js utility for in loop functions
+         */
+        var o = {a: 39};
+        var p = {a: 19};
+
+        function merge(o, p) {
+            for(prop in p) { // For all props in p.
+                if (o.hasOwnProperty(prop)) continue; //
+                o[prop] = p[prop]; // Add the property to o.
+            }
+            return o;
+        }
+
+        console.log(o , "before the merge()");
+        console.log(merge(o,p));
+        console.log(o , "after merge()")
+    </script>
+</head>
+<body>
+
+</body>
+</html>

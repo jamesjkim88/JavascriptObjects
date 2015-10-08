@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        THREE WAYS TO MAKE OBJECTS
+         */
+
+        //object literal
+        var car = {
+            make: "Infiniti"
+        };
+        console.log(car)
+
+        //constructors
+        function Car(model){
+            this.model = model;
+        }
+        var Infiniti = new Car("G37s");
+        console.log(Infiniti)
+
+        //Object.create()
+        var typeOfCar = Object.create({type: "coupe"});
+        console.log(typeOfCar);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

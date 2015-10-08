@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        Prototype Attribute
+         */
+        var dog = {
+            name: "rocky",
+            breed: "AmStaff"
+        }
+
+        var rocky = Object.create(dog);
+        Object.getPrototypeOf(rocky);
+        dog.isPrototypeOf(rocky); //should print true;
+        console.log(dog.isPrototypeOf(rocky));
+
+        var cat = {};
+        console.log(cat.isPrototypeOf(rocky)); //should print false
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

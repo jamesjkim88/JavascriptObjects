@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        Deleting Properties
+         */
+        var x = {
+            id: 123,
+            code: 321
+        };
+
+        var y = Object.create(x);
+
+        console.log(y);
+
+        delete y.id;
+
+        console.log(y);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

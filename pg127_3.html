@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        Restrictions
+         */
+        var o = {b: 39};
+        var p = {a: 19};
+
+        function restrict(o, p) { for(prop in o) {
+            if (!(prop in p)) delete o[prop];
+        }
+            return o;
+        }
+
+        console.log(o , "before the restrict()");
+        console.log(restrict(o,p));
+        console.log(o , "after restrict()")
+    </script>
+</head>
+<body>
+
+</body>
+</html>

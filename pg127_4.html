@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        Subtract
+         */
+
+        var o = {a:52};
+        var p = {b:12};
+
+        function subtract(o,p){
+        for(prop in p) { delete o[prop];
+        }
+        return o;
+        }
+
+        console.log(p,o , "before the subtract()");
+        console.log(subtract(o,p));
+        console.log(p,o , "after subtract()")
+    </script>
+</head>
+<body>
+
+</body>
+</html>
