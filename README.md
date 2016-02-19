@@ -1,8 +1,11 @@
 Practice for JavaScript Objects
 =========================
 
-#UUID
- - 6686318D-FBD9-4B91-BBFB-5FA7BB3662CE
+ - ```Object.keys()``` check if properties are enumerable and Object.hasOwnPropertyName doesnt
 
-#Description
- - Practice on Code Snippets on Javascript Book.
+#get methods for objects
+  - Object.defineProperty(obj, "prop", {get: function(){return "hello"};
+
+  - serialization converts objects into stream of bits or string
+
+  -sparse arrays dont have contigious index
